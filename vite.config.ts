@@ -22,7 +22,9 @@ export default defineConfig(({ mode }) => {
       cors: true,
       proxy: {
         "/api": {
-          target: isDev ? "http://127.0.0.1:3000" : "URL_PROD",
+          target: isDev
+            ? "http://127.0.0.1:3000"
+            : "https://beer-service-production.up.railway.app",
           changeOrigin: true,
           secure: false,
           rewrite: (path) => path.replace("/api/", "/"),

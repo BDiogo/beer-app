@@ -1,11 +1,13 @@
 # Beer App - Brewery Management System
 
 ## Project Overview
+
 A full-stack application for managing beer and brewery information with interactive maps and detailed listings. Built with React, TypeScript, and Vite for the frontend, with a Node.js backend.
 
 ## Architecture
 
 ### Key Features
+
 - Beer catalog with detailed information
 - Brewery locations on interactive maps
 - Form-based data entry with validation
@@ -13,10 +15,11 @@ A full-stack application for managing beer and brewery information with interact
 - Responsive UI with Material-UI components
 
 ### Frontend Structure
+
 ```
 src/
 ├── beer/          # Beer-related components and logic
-├── brewery/       # Brewery-related components  
+├── brewery/       # Brewery-related components
 ├── common/        # Shared UI components
 ├── navigation/    # Routing configuration
 ├── store/         # Redux store configuration
@@ -25,6 +28,7 @@ src/
 ```
 
 ### Technology Stack
+
 - **UI Framework**: React with TypeScript
 - **Build Tool**: Vite
 - **State Management**: Redux Toolkit
@@ -34,6 +38,7 @@ src/
 - **API Client**: Axios
 
 ## Development Priorities
+
 1. Type safety with TypeScript
 2. Clean component architecture
 3. Responsive design
@@ -41,12 +46,13 @@ src/
 5. Form validation and error handling
 
 # React + TypeScript + Vite
+
 ## Libraries
 
 UI - Mui
 Store - Redux
 Form constructtion /Validation - formik & yup
-Map - Leaflet   
+Map - Leaflet  
 API Requets - Axios
 
 ## Runing
@@ -72,4 +78,4 @@ B Backend
 
 1. npm run build
 1. npm run migrate:dev-run (create db structure and some data)
-1. npm run start
+1. npm run dev
