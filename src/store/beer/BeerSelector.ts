@@ -48,7 +48,7 @@ export class BeerSelector {
   }
 
   static selectFiltered(state: RootState): Beer[] {
-    return state.beers.list.filter(
+    return state.beers.list?.filter(
       (beer) =>
         (!state.beers.filter.abv ||
           (beer.abv < state.beers.filter.abv[1] &&
@@ -63,7 +63,7 @@ export class BeerSelector {
   }
 
   static selectFilteredDetails(state: RootState): BeerDetails[] {
-    const filtered = state.beers.list.filter(
+    const filtered = state.beers.list?.filter(
       (beer) =>
         (!state.beers.filter.abv ||
           (beer.abv < state.beers.filter.abv[1] &&
@@ -86,7 +86,7 @@ export class BeerSelector {
     state: RootState,
     predicate: (beer: Beer) => boolean
   ): Beer[] {
-    return state.beers.list.filter(predicate);
+    return state.beers.list?.filter(predicate);
   }
 
   static approvedBeers(state: RootState): Beer[] {
