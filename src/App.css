@@ -1,0 +1,13 @@
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+.leaflet-popup-content {
+  margin: 10px 20px 10px 20px;
+}
