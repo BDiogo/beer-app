@@ -31,5 +31,8 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
+    preview: {
+      allowedHosts: ["beer-app-production.up.railway.app"]
+    }
   };
 });
