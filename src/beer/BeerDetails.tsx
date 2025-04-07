@@ -13,6 +13,7 @@ import { Utils } from "../utils/Utils";
 import { BeerSelector } from "../store/beer/BeerSelector";
 import { BrewerySection } from "../brewery/BrewerySection";
 import bottleImage from "../assets/bottle.svg";
+import { ResultsNotFound } from "../common/ResultsNotFound";
 
 export const BeerDetails = memo((): React.ReactElement => {
   const { id } = useParams<{ id: string }>();
@@ -35,7 +36,7 @@ export const BeerDetails = memo((): React.ReactElement => {
   );
 
   if (!beer) {
-    return <div>Beer not found</div>;
+    return <ResultsNotFound />;
   }
 
   return (
