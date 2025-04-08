@@ -41,7 +41,7 @@ const initialState: State = {
   error: null,
   srm: [
     { r: 255, g: 230, b: 153 },
-    { r: 150, g: 45, b: 0 },
+    { r: 90, g: 15, b: 0 },
   ],
   srmRange: [0, 40],
   ibu: [
