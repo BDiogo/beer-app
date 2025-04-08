@@ -55,7 +55,7 @@ const initialState: State = {
   ],
   abvRange: [3, 20],
   filter: {
-    srm: [0, 75],
+    srm: [0, 40],
     ibu: [0, 100],
     abv: [3, 20],
   },

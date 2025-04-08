@@ -42,7 +42,7 @@ export class FormValidation {
         .required("Required"),
       srm: Yup.number()
         .min(0, "Too Low")
-        .max(75, "Too Long")
+        .max(40, "Too Long")
         .required("Required"),
       breweryId: Yup.number().required("Required"),
       description: Yup.string()
